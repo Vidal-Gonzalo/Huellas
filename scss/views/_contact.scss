@@ -1,0 +1,57 @@
+#about{
+    padding-top: 20px;
+    font-family: $secondary-text;
+    background-color: $tertiary-color;
+    height: 300px;
+
+    .about__title,.about__subtitle{
+        text-align: center;
+    }
+
+    .about__title{
+        margin-top: 40px;
+        font-family: $secondary-text;
+        font-weight: $font-bold;
+        color: $primary-color;
+        letter-spacing: 3px;
+    }
+
+    .about__subtitle{
+        margin-top: 20px;
+        color: $secondary-color;
+        font-size: 20px;
+    }
+
+    .about__author{
+        color: $secondary-color
+    }
+}
+
+#identity{
+    height: 50vh;
+    background-image: url(./img/presentation.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: $secondary-color
+}
+
+#mission{
+    font-family: $secondary-text;
+    background-color: antiquewhite;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    
+    .mission__wrap{
+        padding: 50px;
+        box-shadow: 3px 3px 3px 5px #ccc;
+    }
+    .mission__title{
+        font-family: $primary-text;
+        font-size: $subtitle-font-size;
+        letter-spacing: 2px;
+        color: $primary-color;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+}

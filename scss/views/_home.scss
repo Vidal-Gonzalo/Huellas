@@ -1,0 +1,152 @@
+//Presentation
+
+#presentation {
+  height: 100vh;
+  color: $secondary-color;
+  background-image: url(./img/Huellas-inicio.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: $tertiary-color;
+
+  .presentation__wrap {
+    padding: 150px 100px 100px 130px;
+    font-family: $primary-text;
+  }
+  
+  .presentation__title {
+    color: $primary-color;
+    font-size: $title-font-size;
+    font-weight: $font-semi-light;
+    letter-spacing: 2px;
+  }
+  
+  .presentation__subtitle {
+    font-size: $subtitle-font-size;
+    font-weight: $font-light;
+  }
+
+}
+
+
+
+//Goals
+
+#goals {
+  background-color: $secondary-color;
+
+  font-family: $secondary-text;
+}
+
+.goals__wrap {
+  text-align: center;
+}
+
+.goals__title {
+  font-family: $primary-text;
+  color: $primary-color;
+  font-size: $sec-title-font-size;
+  font-weight: $font-light;
+  letter-spacing: 3px;
+}
+
+.goals__subtitle {
+  color: $tertiary-color;
+}
+
+.cards {
+  width: 350px;
+  max-height: 300px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $tertiary-color;
+}
+
+.card__icon {
+  font-size: $subtitle-font-size;
+}
+
+.card__title{
+    font-size: $paragraph-font-size;
+}
+
+.card__content{
+  width: 100%;
+  padding: 10px;
+  font-size: $paragraph-font-size;
+}
+
+
+//Explore
+
+#explore {
+    height: 250px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    font-weight: $font-bold;
+}
+    
+
+//TopWritings
+
+#topWritings {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  text-align: center;
+}
+
+.topWritings__title {
+  font-family: $primary-text;
+  color: $primary-color;
+  font-size: $sec-title-font-size;
+  font-weight: $font-light;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.topWritings__highlight {
+  font-size: 18px;
+}
+
+
+
+//Writings
+
+#writings {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  text-align: center;
+}
+
+.writings__title{
+    font-family: $primary-text;
+    color: $primary-color;
+    font-size: $sec-title-font-size;
+    font-weight: $font-light;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.writings__card {
+  width: 320px;
+  font-family: $secondary-text;
+}
+
+.writings__card .writings__image {
+  border-radius: 7%;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.writings__card-title {
+  font-weight: $font-bold;
+}
+
+.writings__card-type {
+  font-size: $paragraph-font-size;
+  margin-bottom: 10px;
+}

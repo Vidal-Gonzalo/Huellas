@@ -1,0 +1,153 @@
+@import '../components/buttons';
+
+@media (min-width: 330px) and (max-width: 767px) {
+    .presentation__wrap {
+      padding: 100px 50px 50px 20px;
+    }
+    .presentation__title {
+      font-size: 35px;
+    }
+    .presentation__subtitle {
+      font-size: 25px;
+    }
+  
+    #presentation {
+      height: 75vh;
+      background-image: none;
+      padding-bottom: 50px;
+    }
+  
+    .button{
+      width: 120px;
+    }
+  
+    .presentation-button {
+      margin-right: 10px;
+      background-color: $primary-color;
+    }
+  
+    .secondary-button{
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-size: 12px;
+    }
+  
+    .tertiary-button{
+      margin-left: 20px;
+      font-size: 12px;
+      background-color: $primary-color;
+      transition: all 500ms;
+    }
+
+    .explore__title{
+      font-size: 15px;
+    }
+
+    .goals__wrap{
+      padding-bottom: 50px;
+    }
+
+    .goals__subtitle{
+      display: none;
+    }
+
+    .goals__wrap, .writings__wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .tertiary-button {
+      margin-left: 0px;
+      width: 150px;
+    }
+
+    .footer__post .button{
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    .footer__title{
+      font-size: 35px;
+    }
+  
+    .footer__container {
+      font-size: 12px;
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #presentation {
+      height: 70vh;
+    }
+    
+    .presentation__wrap{
+      padding: 150px 100px 100px 80px;
+    }
+
+    .presentation-button {
+      margin-right: 10px;
+      background-color: $primary-color;
+    }
+  
+    .secondary-button{
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+  
+    .goals__subtitle {
+      font-size: $paragraph-font-size;
+    }
+  
+    .explore__title{
+      font-size: 20px;
+    }
+  
+    $title-font-size: 40px;
+  
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .tertiary-button {
+      background-color: $primary-color;
+      margin-left: 20px;
+    }
+  
+    .goals__subtitle{
+      padding-bottom: 50px;
+    }
+
+    .cards{
+      width: 200px
+    }
+  
+    .cards .card__content h2{
+      font-size: 25px;
+    }
+  
+    .cards .card__content p{
+      font-size: 13px;
+    }
+  
+    .footer__container {
+      font-size: 12px;
+    }
+
+    .footer__post .button {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1299px) {
+    .presentation__wrap {
+      padding: 200px 100px 0px 50px;
+    }
+  
+    .presentation__title {
+      font-size: 40px;
+    }
+  }
+  

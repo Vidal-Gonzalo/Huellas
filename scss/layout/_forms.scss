@@ -1,0 +1,19 @@
+.form__post{
+    width: 100%;
+    height: 500px;
+    font-family: $secondary-text;
+    margin-bottom: 50px;
+    border-radius: 1%;
+    box-shadow: 1px 1px 3px 3px rgb(214, 213, 213);
+
+    .button{
+        margin-top: 10px;
+        background-color: $primary-color
+    }
+}
+
+#contact{
+    .form__post{
+        height: 400px;
+    }
+}

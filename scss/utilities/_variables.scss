@@ -1,0 +1,33 @@
+
+//Variables 
+$primary-color: #f14755;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+
+
+//Colors map added
+    $theme-colors: () !default;
+
+    $theme-colors: map-merge(
+        (
+          "primary": $primary-color,
+          "secondary": $secondary-color,
+          "tertiary": $tertiary-color
+        ),
+        $theme-colors
+    );
+
+
+    
+
+//Map merge 
+
+//Social-media map added
+
+//Sizes
+$title-font-size: 60px;
+$sec-title-font-size: 50px;
+$subtitle-font-size: 30px;
+$paragraph-font-size: 14px;
+
+
