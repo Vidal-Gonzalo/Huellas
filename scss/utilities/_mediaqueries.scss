@@ -24,7 +24,7 @@
    } 
   
     #presentation {
-      height: 75vh;
+      height: 100vh;
       background-image: none;
       padding-bottom: 50px;
     
@@ -38,7 +38,10 @@
         font-size: 25px;
       }
       .button{
+        width: 100px;
+        height: 50px;
         margin-right: 10px;
+        font-size: 13px;
         background-color: $primary-color;
       }
     }
@@ -116,7 +119,7 @@
       }
 
       .footer__container {
-        font-size: 12px;
+        font-size: 11px;
       }
     }
 
