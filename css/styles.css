@@ -16,14 +16,19 @@
 
 #presentation {
   height: 100vh;
+  width: 100vw;
   color: #ffffff;
   background-image: url(./img/Huellas-inicio.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  background-color: #000000; }
+  background-color: #000000;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle; }
   #presentation .presentation__wrap {
-    padding: 150px 100px 100px 130px;
+    display: inline-block;
+    margin-left: 5%;
     font-family: "Oswald", sans-serif; }
   #presentation .presentation__title {
     color: #f14755;
@@ -37,19 +42,16 @@
 #goals {
   background-color: #ffffff;
   font-family: "Raleway", sans-serif; }
-
-.goals__wrap {
-  text-align: center; }
-
-.goals__title {
-  font-family: "Oswald", sans-serif;
-  color: #f14755;
-  font-size: 50px;
-  font-weight: 300;
-  letter-spacing: 3px; }
-
-.goals__subtitle {
-  color: #000000; }
+  #goals .goals__wrap {
+    text-align: center; }
+  #goals .goals__title {
+    font-family: "Oswald", sans-serif;
+    color: #f14755;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px; }
+  #goals .goals__subtitle {
+    color: #000000; }
 
 .cards {
   width: 350px;
@@ -60,69 +62,72 @@
   align-items: center;
   text-align: center;
   color: #000000; }
-
-.card__icon {
-  font-size: 30px; }
-
-.card__title {
-  font-size: 14px; }
-
-.card__content {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px; }
+  .cards .card__icon {
+    font-size: 30px; }
+  .cards .card__title {
+    font-size: 14px; }
+  .cards .card__content {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; }
 
 #explore {
+  position: relative;
   height: 250px;
   background-color: #f14755;
   color: #ffffff;
   text-align: center;
   font-weight: bold; }
+  #explore .button {
+    margin-left: 40px;
+    font-size: 15px;
+    transition: all 500ms; }
 
 #topWritings {
   background-color: #ffffff;
   color: #000000;
   text-align: center; }
-
-.topWritings__title {
-  font-family: "Oswald", sans-serif;
-  color: #f14755;
-  font-size: 50px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 20px; }
-
-.topWritings__highlight {
-  font-size: 18px; }
+  #topWritings .topWritings__title {
+    font-family: "Oswald", sans-serif;
+    color: #f14755;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #topWritings .topWritings__highlight {
+    font-size: 18px; }
 
 #writings {
   background-color: #ffffff;
   color: #000000;
   text-align: center; }
-
-.writings__title {
-  font-family: "Oswald", sans-serif;
-  color: #f14755;
-  font-size: 50px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 20px; }
-
-.writings__card {
-  width: 320px;
-  font-family: "Raleway", sans-serif; }
-
-.writings__card .writings__image {
-  border-radius: 7%;
-  min-height: 200px;
-  max-height: 300px; }
-
-.writings__card-title {
-  font-weight: bold; }
-
-.writings__card-type {
-  font-size: 14px;
-  margin-bottom: 10px; }
+  #writings .writings__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #writings .writings__title {
+    font-family: "Oswald", sans-serif;
+    color: #f14755;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #writings .writings__card {
+    width: 320px;
+    font-family: "Raleway", sans-serif; }
+  #writings .writings__card .writings__image {
+    border-radius: 7%;
+    min-height: 200px;
+    max-height: 300px; }
+  #writings .writings__card-title {
+    font-weight: bold; }
+  #writings .writings__card-type {
+    font-size: 14px;
+    margin-bottom: 10px; }
+  #writings .button {
+    color: #ffffff; }
+  #writings #svg {
+    border: none !important; }
 
 .form__post {
   width: 100%;
@@ -143,27 +148,27 @@
 
 .carousel .carousel-inner .carousel-item {
   height: 400px; }
-
-.carousel .carousel-inner .carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 300px; }
+  .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 300px; }
 
 .button {
   width: 140px;
   height: 50px;
   margin: 30px 0px 0px 0px;
-  background-color: transparent;
+  background-color: #f14755;
   color: #ffffff;
   border-color: #ffffff;
   border-radius: 7%;
+  box-shadow: 3px 3px 3px black;
   cursor: pointer;
   transition: all 500ms; }
   .button:hover {
     transform: scale(1.2, 1.2);
-    background-color: #f14755; }
+    background-color: #f14755e3; }
 
 .secondary-button {
   color: #000000;
@@ -171,11 +176,6 @@
   .secondary-button:hover {
     color: #ffffff;
     background-color: #f14755; }
-
-.tertiary-button {
-  margin-left: 40px;
-  font-size: 15px;
-  transition: all 500ms; }
 
 .presentation-button,
 .button-explore {
@@ -214,37 +214,37 @@
       margin-top: 15px;
       font-weight: bold; }
     .owl-carousel .item .button {
+      color: #ffffff;
       margin-top: 0px; }
 
 #footer {
   color: #ffffff;
-  background-color: #f14755; }
-
-.footer__post {
-  text-align: center; }
-
-.footer__post .button {
-  margin: 0; }
-
-.footer__title {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 20px; }
-
-.footer__container {
-  color: #ffffff;
-  font-size: 14px; }
-
-.footer__container a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: all 500ms; }
-
-.footer__container a:hover {
-  color: #ffffff; }
+  background-color: #f14755;
+  position: relative; }
+  #footer .footer__post {
+    text-align: center; }
+  #footer .footer__post .button {
+    margin: 0; }
+  #footer .footer__title {
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #footer .footer__subtitle {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 25px; }
+  #footer .footer__container {
+    color: #ffffff;
+    font-size: 14px; }
+  #footer .footer__container a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 500ms; }
+  #footer .footer__container a:hover {
+    color: #ffffff; }
 
 #text {
   font-family: "Raleway", sans-serif;
@@ -361,15 +361,16 @@
   width: 140px;
   height: 50px;
   margin: 30px 0px 0px 0px;
-  background-color: transparent;
+  background-color: #f14755;
   color: #ffffff;
   border-color: #ffffff;
   border-radius: 7%;
+  box-shadow: 3px 3px 3px black;
   cursor: pointer;
   transition: all 500ms; }
   .button:hover {
     transform: scale(1.2, 1.2);
-    background-color: #f14755; }
+    background-color: #f14755e3; }
 
 .secondary-button {
   color: #000000;
@@ -378,11 +379,6 @@
     color: #ffffff;
     background-color: #f14755; }
 
-.tertiary-button {
-  margin-left: 40px;
-  font-size: 15px;
-  transition: all 500ms; }
-
 .presentation-button,
 .button-explore {
   margin-right: 30px; }
@@ -390,67 +386,90 @@
 .footer-button {
   margin: 20px 0px 20px 0px; }
 
-@media (min-width: 330px) and (max-width: 767px) {
-  .presentation__wrap {
-    padding: 100px 50px 50px 20px; }
-  .presentation__title {
-    font-size: 35px; }
-  .presentation__subtitle {
-    font-size: 25px; }
+@media (min-width: 320px) and (max-width: 369px) {
+  #presentation .button {
+    width: 110px; }
+  #explore .button {
+    width: 110px; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    background-attachment: fixed; }
+    .navbar .navbar-nav:last-child {
+      display: flex;
+      flex-direction: row; }
   #presentation {
     height: 75vh;
     background-image: none;
     padding-bottom: 50px; }
+    #presentation .presentation__wrap {
+      padding: 20px; }
+    #presentation .presentation__title {
+      font-size: 35px; }
+    #presentation .presentation__subtitle {
+      font-size: 25px; }
+    #presentation .button {
+      margin-right: 10px;
+      background-color: #f14755; }
   .button {
     width: 120px; }
-  .presentation-button {
-    margin-right: 10px;
-    background-color: #f14755; }
   .secondary-button {
     background-color: #f14755;
     color: #ffffff;
     font-size: 12px; }
-  .tertiary-button {
+  #explore .explore__title {
+    font-size: 15px; }
+  #explore .button {
     margin-left: 20px;
     font-size: 12px;
-    background-color: #f14755;
-    transition: all 500ms; }
-  .explore__title {
-    font-size: 15px; }
-  .goals__wrap {
-    padding-bottom: 50px; }
-  .goals__subtitle {
-    display: none; }
-  .goals__wrap, .writings__wrap {
+    transition: all 500ms;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px black; }
+  #goals .goals__wrap {
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center; }
+  #goals .goals__subtitle {
+    display: none; }
+  #writings .writings__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .carousel .carousel-inner .carousel-item {
+    height: 300px; }
   .tertiary-button {
     margin-left: 0px;
     width: 150px; }
-  .footer__post .button {
+  #footer .footer__post .button {
     margin-top: 0px;
     margin-bottom: 30px; }
-  .footer__title {
+  #footer .footer__title {
     font-size: 35px; }
-  .footer__container {
+  #footer .footer__subtitle {
+    font-size: 20px; }
+  #footer .footer__container {
     font-size: 12px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #presentation {
-    height: 70vh; }
-  .presentation__wrap {
-    padding: 150px 100px 100px 80px; }
-  .presentation-button {
-    margin-right: 10px;
-    background-color: #f14755; }
+    height: 70vh;
+    background-image: url(./img/Huellas-inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000000; }
+    #presentation .presentation-button {
+      margin-right: 10px;
+      background-color: #f14755; }
   .secondary-button {
     background-color: #f14755;
     color: #ffffff; }
-  .goals__subtitle {
+  #goals .goals__subtitle {
     font-size: 14px; }
-  .explore__title {
+  #explore .explore__title {
     font-size: 20px; }
+  #explore .goals__subtitle {
+    padding-bottom: 50px; }
   .buttonContainer {
     display: flex;
     justify-content: center;
@@ -458,23 +477,19 @@
   .tertiary-button {
     background-color: #f14755;
     margin-left: 20px; }
-  .goals__subtitle {
-    padding-bottom: 50px; }
   .cards {
     width: 200px; }
-  .cards .card__content h2 {
-    font-size: 25px; }
-  .cards .card__content p {
-    font-size: 13px; }
-  .footer__container {
+    .cards .card__content h2 {
+      font-size: 25px; }
+    .cards .card__content p {
+      font-size: 13px; }
+  #footer .footer__container {
     font-size: 12px; }
-  .footer__post .button {
+  #footer .footer__post .button {
     margin-bottom: 30px; } }
 
 @media (min-width: 1024px) and (max-width: 1299px) {
-  .presentation__wrap {
-    padding: 200px 100px 0px 50px; }
-  .presentation__title {
+  #presentation .presentation__title {
     font-size: 40px; } }
 
 .center {

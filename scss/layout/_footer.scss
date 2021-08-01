@@ -3,37 +3,47 @@
   #footer {
     color: $secondary-color;
     background-color: $primary-color;
-  }
+    position: relative;
   
-  .footer__post {
-    text-align: center;
-  }
-
-  .footer__post .button{
-    margin: 0;
-  }
+    .footer__post {
+      text-align: center;
+      
+    }
   
-  .footer__title{
-    font-family: $primary-text;
-    color: $secondary-color;
-    font-size: $subtitle-font-size;
-    font-weight: $font-light;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-  }
+    .footer__post .button{
+      margin: 0;
+    }
+    
+    .footer__title{
+      font-family: $primary-text;
+      color: $secondary-color;
+      font-size: $sec-title-font-size;
+      font-weight: $font-light;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
   
-  .footer__container {
-    color: $secondary-color;
-    font-size: $paragraph-font-size;
-  }
+    .footer__subtitle{
+      font-family: $secondary-text;
+      color: $secondary-color;
+      font-size: 25px;
+      
+    }
+    
+    .footer__container {
+      color: $secondary-color;
+      font-size: $paragraph-font-size;
+    }
+    
+    .footer__container a {
+      text-decoration: none;
+      color: $secondary-color;
+      transition: all 500ms;
+    }
   
-  .footer__container a {
-    text-decoration: none;
-    color: $secondary-color;
-    transition: all 500ms;
-  }
-
-  .footer__container a:hover{
-    color: $secondary-color;
+    .footer__container a:hover{
+      color: $secondary-color;
+    }
+    
   }
   

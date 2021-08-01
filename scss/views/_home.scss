@@ -1,16 +1,22 @@
 //Presentation
 
+
 #presentation {
   height: 100vh;
+  width: 100vw;
   color: $secondary-color;
   background-image: url(./img/Huellas-inicio.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   background-color: $tertiary-color;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
 
   .presentation__wrap {
-    padding: 150px 100px 100px 130px;
+    display: inline-block;
+    margin-left: 5%;
     font-family: $primary-text;
   }
   
@@ -34,26 +40,25 @@
 
 #goals {
   background-color: $secondary-color;
-
   font-family: $secondary-text;
-}
 
-.goals__wrap {
-  text-align: center;
-}
 
-.goals__title {
-  font-family: $primary-text;
-  color: $primary-color;
-  font-size: $sec-title-font-size;
-  font-weight: $font-light;
-  letter-spacing: 3px;
-}
+  .goals__wrap {
+    text-align: center;
+  }
 
-.goals__subtitle {
-  color: $tertiary-color;
-}
+  .goals__title {
+    font-family: $primary-text;
+    color: $primary-color;
+    font-size: $sec-title-font-size;
+    font-weight: $font-light;
+    letter-spacing: 3px;
+  }
 
+  .goals__subtitle {
+    color: $tertiary-color;
+  }
+}
 .cards {
   width: 350px;
   max-height: 300px;
@@ -63,31 +68,41 @@
   align-items: center;
   text-align: center;
   color: $tertiary-color;
-}
 
-.card__icon {
-  font-size: $subtitle-font-size;
-}
-
-.card__title{
+  .card__icon {
+    font-size: $subtitle-font-size;
+  }
+  
+  .card__title{
+      font-size: $paragraph-font-size;
+  }
+  
+  .card__content{
+    width: 100%;
+    padding: 10px;
     font-size: $paragraph-font-size;
+  }
 }
 
-.card__content{
-  width: 100%;
-  padding: 10px;
-  font-size: $paragraph-font-size;
-}
+
 
 
 //Explore
 
 #explore {
+    position: relative;
     height: 250px;
     background-color: $primary-color;
     color: $secondary-color;
     text-align: center;
     font-weight: $font-bold;
+
+  .button{
+    margin-left: 40px;
+    font-size: 15px;
+    transition: all 500ms;
+    
+  }
 }
     
 
@@ -97,20 +112,22 @@
   background-color: $secondary-color;
   color: $tertiary-color;
   text-align: center;
+
+  .topWritings__title {
+    font-family: $primary-text;
+    color: $primary-color;
+    font-size: $sec-title-font-size;
+    font-weight: $font-light;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .topWritings__highlight {
+    font-size: 18px;
+  }
 }
 
-.topWritings__title {
-  font-family: $primary-text;
-  color: $primary-color;
-  font-size: $sec-title-font-size;
-  font-weight: $font-light;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-}
 
-.topWritings__highlight {
-  font-size: 18px;
-}
 
 
 
@@ -120,33 +137,48 @@
   background-color: $secondary-color;
   color: $tertiary-color;
   text-align: center;
+
+    .writings__wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .writings__title{
+      font-family: $primary-text;
+      color: $primary-color;
+      font-size: $sec-title-font-size;
+      font-weight: $font-light;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .writings__card {
+      width: 320px;
+      font-family: $secondary-text;
+    }
+
+    .writings__card .writings__image {
+      border-radius: 7%;
+      min-height: 200px;
+      max-height: 300px;
+    }
+
+    .writings__card-title {
+      font-weight: $font-bold;
+    }
+
+    .writings__card-type {
+      font-size: $paragraph-font-size;
+      margin-bottom: 10px;
+    }
+
+    .button{
+      color: $secondary-color;
+    }
+
+    #svg{
+      border: none !important;
+    }
 }
 
-.writings__title{
-    font-family: $primary-text;
-    color: $primary-color;
-    font-size: $sec-title-font-size;
-    font-weight: $font-light;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-}
-
-.writings__card {
-  width: 320px;
-  font-family: $secondary-text;
-}
-
-.writings__card .writings__image {
-  border-radius: 7%;
-  min-height: 200px;
-  max-height: 300px;
-}
-
-.writings__card-title {
-  font-weight: $font-bold;
-}
-
-.writings__card-type {
-  font-size: $paragraph-font-size;
-  margin-bottom: 10px;
-}
