@@ -63,7 +63,7 @@
       }
       .button{
         margin-left: 20px;
-        font-size: 12px;
+        font-size: 11px;
         transition: all 500ms;
         border: 1px solid #ccc;
         box-shadow: 3px 3px 3px black;
@@ -91,8 +91,13 @@
         align-items: center;
       }
 
-      .writings__card{
-        width: 280px;
+      .writings__title{
+        font-family: $primary-text;
+        color: $primary-color;
+        font-size: 40px;
+        font-weight: $font-light;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
       }
 
       .writings__card .writings__image {
@@ -104,10 +109,18 @@
       }
     }
 
-  
-    .carousel .carousel-inner .carousel-item {
-      height: 300px;
+    #topWritings{
+
+      .topWritings__title{
+        font-size: 35px;
+      }
+
+      .carousel .carousel-inner .carousel-item {
+        height: 300px;
+      }
     }
+
+   
 
     .tertiary-button {
       margin-left: 0px;

@@ -424,7 +424,7 @@
     font-size: 15px; }
   #explore .button {
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 11px;
     transition: all 500ms;
     border: 1px solid #ccc;
     box-shadow: 3px 3px 3px black; }
@@ -439,15 +439,22 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-  #writings .writings__card {
-    width: 280px; }
+  #writings .writings__title {
+    font-family: "Oswald", sans-serif;
+    color: #f14755;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
   #writings .writings__card .writings__image {
     border-radius: 7%;
     min-height: 100px;
     max-height: 200px;
     min-width: 100px;
     max-width: 200px; }
-  .carousel .carousel-inner .carousel-item {
+  #topWritings .topWritings__title {
+    font-size: 35px; }
+  #topWritings .carousel .carousel-inner .carousel-item {
     height: 300px; }
   .tertiary-button {
     margin-left: 0px;
