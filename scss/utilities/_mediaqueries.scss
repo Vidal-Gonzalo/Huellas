@@ -90,6 +90,18 @@
         justify-content: center;
         align-items: center;
       }
+
+      .writings__card{
+        width: 280px;
+      }
+
+      .writings__card .writings__image {
+        border-radius: 7%;
+        min-height: 100px;
+        max-height: 200px;
+        min-width: 100px;
+        max-width: 200px;
+      }
     }
 
   

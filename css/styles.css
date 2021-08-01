@@ -439,6 +439,14 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+  #writings .writings__card {
+    width: 280px; }
+  #writings .writings__card .writings__image {
+    border-radius: 7%;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100px;
+    max-width: 200px; }
   .carousel .carousel-inner .carousel-item {
     height: 300px; }
   .tertiary-button {
