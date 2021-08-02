@@ -14,7 +14,7 @@ $('.owl-carousel').owlCarousel({
             autoplayTimeout: 3000,
             autoplayHoverPause: true
         },
-        600:{
+        720:{
             items:2,
             loop:true,
             autoplay: true,

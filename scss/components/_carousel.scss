@@ -4,7 +4,10 @@
 
 .carousel .carousel-inner .carousel-item {
   height: 400px;
-
+  position: relative;
+  .carousel-caption{
+    font-family: $secondary-text;
+  }
   img {
   position: absolute;
   object-fit: cover;

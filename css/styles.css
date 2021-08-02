@@ -1,3 +1,80 @@
+.carousel .carousel-inner {
+  box-shadow: 5px 5px 15px 5px #000000; }
+
+.carousel .carousel-inner .carousel-item {
+  height: 400px;
+  position: relative; }
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-family: "Raleway", sans-serif; }
+  .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 300px; }
+
+.button {
+  width: 140px;
+  height: 50px;
+  margin: 30px 0px 0px 0px;
+  background-color: #f14755;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 7%;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+  transition: all 500ms; }
+  .button:hover {
+    transform: scale(1.2, 1.2);
+    background-color: #f14755e3; }
+
+.secondary-button {
+  color: #000000;
+  border-color: #000000; }
+  .secondary-button:hover {
+    color: #ffffff;
+    background-color: #f14755; }
+
+.presentation-button,
+.button-explore {
+  margin-right: 30px; }
+
+.footer-button {
+  margin: 20px 0px 20px 0px; }
+
+.owl-carousel {
+  position: relative;
+  font-family: "Raleway", sans-serif; }
+  .owl-carousel .owl-nav .owl-prev:before {
+    content: ""; }
+  .owl-carousel .owl-nav .owl-next:after {
+    content: ""; }
+  .owl-carousel .owl-prev, .owl-carousel .owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    display: block !important;
+    color: #f14755 !important; }
+  .owl-carousel .owl-prev {
+    left: -50px; }
+  .owl-carousel .owl-next {
+    right: -40px; }
+  .owl-carousel .item {
+    height: 500px;
+    border-radius: 3%;
+    padding: 10px;
+    background-color: #dddddd; }
+    .owl-carousel .item .item__image {
+      border-radius: 3%;
+      max-height: 60%; }
+    .owl-carousel .item .item__title {
+      margin-top: 15px;
+      font-weight: bold; }
+    .owl-carousel .item .button {
+      color: #ffffff;
+      margin-top: 0px; }
+
 .navbar {
   background-color: #000000;
   box-shadow: 2px 2px 5px 2px #000000; }
@@ -143,80 +220,6 @@
 #contact .form__post {
   height: 400px; }
 
-.carousel .carousel-inner {
-  box-shadow: 5px 5px 15px 5px #000000; }
-
-.carousel .carousel-inner .carousel-item {
-  height: 400px; }
-  .carousel .carousel-inner .carousel-item img {
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 300px; }
-
-.button {
-  width: 140px;
-  height: 50px;
-  margin: 30px 0px 0px 0px;
-  background-color: #f14755;
-  color: #ffffff;
-  border-color: #ffffff;
-  border-radius: 7%;
-  box-shadow: 3px 3px 3px black;
-  cursor: pointer;
-  transition: all 500ms; }
-  .button:hover {
-    transform: scale(1.2, 1.2);
-    background-color: #f14755e3; }
-
-.secondary-button {
-  color: #000000;
-  border-color: #000000; }
-  .secondary-button:hover {
-    color: #ffffff;
-    background-color: #f14755; }
-
-.presentation-button,
-.button-explore {
-  margin-right: 30px; }
-
-.footer-button {
-  margin: 20px 0px 20px 0px; }
-
-.owl-carousel {
-  position: relative;
-  font-family: "Raleway", sans-serif; }
-  .owl-carousel .owl-nav .owl-prev:before {
-    content: ""; }
-  .owl-carousel .owl-nav .owl-next:after {
-    content: ""; }
-  .owl-carousel .owl-prev, .owl-carousel .owl-next {
-    width: 15px;
-    height: 100px;
-    position: absolute;
-    top: 40%;
-    display: block !important;
-    color: #f14755 !important; }
-  .owl-carousel .owl-prev {
-    left: -50px; }
-  .owl-carousel .owl-next {
-    right: -40px; }
-  .owl-carousel .item {
-    height: 500px;
-    border-radius: 3%;
-    padding: 10px;
-    background-color: #dddddd; }
-    .owl-carousel .item .item__image {
-      border-radius: 3%;
-      max-height: 60%; }
-    .owl-carousel .item .item__title {
-      margin-top: 15px;
-      font-weight: bold; }
-    .owl-carousel .item .button {
-      color: #ffffff;
-      margin-top: 0px; }
-
 #footer {
   color: #ffffff;
   background-color: #f14755;
@@ -248,12 +251,13 @@
 
 #text {
   font-family: "Raleway", sans-serif;
-  padding-top: 50px;
-  padding-bottom: 60px; }
+  padding-top: 50px; }
   #text .text__wrap {
     padding: 50px;
     background-color: antiquewhite;
     box-shadow: 3px 3px 3px 5px #ccc; }
+    #text .text__wrap .text__title {
+      font-weight: bold; }
     #text .text__wrap .text__wrapImage {
       display: flex;
       justify-content: center;
@@ -274,7 +278,8 @@
     #text .text__wrap .text__wrapContent {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
       #text .text__wrap .text__wrapContent .text__content {
         padding-top: 30px;
         text-align: center;
@@ -285,7 +290,7 @@
     #text .text__wrap .text__wrapActions .like {
       background-color: #f14755; }
     #text .text__wrap .text__wrapActions .share {
-      background-color: #3b5998 !important; }
+      background-color: #3b5998; }
     #text .text__wrap .text__wrapComments {
       padding: 50px;
       background-color: #e7e7e7;
@@ -330,16 +335,9 @@
   #about .about__subtitle {
     margin-top: 20px;
     color: #ffffff;
-    font-size: 20px; }
+    font-size: 14px; }
   #about .about__author {
     color: #ffffff; }
-
-#identity {
-  height: 50vh;
-  background-image: url(./img/presentation.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff; }
 
 #mission {
   font-family: "Raleway", sans-serif;
@@ -348,7 +346,8 @@
   padding-bottom: 60px; }
   #mission .mission__wrap {
     padding: 50px;
-    box-shadow: 3px 3px 3px 5px #ccc; }
+    box-shadow: 3px 3px 3px 5px #ccc;
+    text-align: center; }
   #mission .mission__title {
     font-family: "Oswald", sans-serif;
     font-size: 30px;
@@ -356,35 +355,6 @@
     color: #f14755;
     margin-top: 30px;
     margin-bottom: 20px; }
-
-.button {
-  width: 140px;
-  height: 50px;
-  margin: 30px 0px 0px 0px;
-  background-color: #f14755;
-  color: #ffffff;
-  border-color: #ffffff;
-  border-radius: 7%;
-  box-shadow: 3px 3px 3px black;
-  cursor: pointer;
-  transition: all 500ms; }
-  .button:hover {
-    transform: scale(1.2, 1.2);
-    background-color: #f14755e3; }
-
-.secondary-button {
-  color: #000000;
-  border-color: #000000; }
-  .secondary-button:hover {
-    color: #ffffff;
-    background-color: #f14755; }
-
-.presentation-button,
-.button-explore {
-  margin-right: 30px; }
-
-.footer-button {
-  margin: 20px 0px 20px 0px; }
 
 @media (min-width: 320px) and (max-width: 369px) {
   #presentation .button {
@@ -414,8 +384,6 @@
       margin-right: 10px;
       font-size: 11px;
       background-color: #f14755; }
-  .button {
-    width: 120px; }
   .secondary-button {
     background-color: #f14755;
     color: #ffffff;
@@ -435,10 +403,6 @@
     align-items: center; }
   #goals .goals__subtitle {
     display: none; }
-  #writings .writings__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   #writings .writings__title {
     font-family: "Oswald", sans-serif;
     color: #f14755;
@@ -449,13 +413,21 @@
   #writings .writings__card .writings__image {
     border-radius: 7%;
     min-height: 100px;
-    max-height: 200px;
+    max-height: 300px;
     min-width: 100px;
-    max-width: 200px; }
+    max-width: 300px; }
+  #writings .writings__card .writings__button .button {
+    width: 150px; }
   #topWritings .topWritings__title {
     font-size: 35px; }
   #topWritings .carousel .carousel-inner .carousel-item {
     height: 300px; }
+    #topWritings .carousel .carousel-inner .carousel-item .carousel-caption {
+      display: block !important;
+      font-family: "Raleway", sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
   .tertiary-button {
     margin-left: 0px;
     width: 150px; }
@@ -467,7 +439,27 @@
   #footer .footer__subtitle {
     font-size: 20px; }
   #footer .footer__container {
-    font-size: 11px; } }
+    font-size: 11px; }
+  #text .text__wrap .text__title {
+    font-size: 20px; }
+  #text .text__wrap .text__wrapContent .text__content {
+    width: 100% !important; }
+  #text .text__wrap .text__wrapActions .button {
+    width: 100px;
+    height: 40px;
+    font-size: 10px; }
+  #text .text__wrap .text__wrapComments {
+    padding: 20px; }
+    #text .text__wrap .text__wrapComments .form-floating .button {
+      width: 100px;
+      height: 40px;
+      font-size: 12px; }
+    #text .text__wrap .text__wrapComments .text__commentary {
+      font-size: 11px; }
+  #post .form__post {
+    height: 100vh; }
+  #contact .form__post {
+    height: 100vh; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #presentation {
