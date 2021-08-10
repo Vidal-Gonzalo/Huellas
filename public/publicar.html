@@ -5,22 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="¡Deja tu Huella publicando tus escritos/poemas en nuestra plataforma!"/>
+  <meta name="description" content="¡Deja tu Huella publicando tus escritos/poemas en nuestra plataforma!" />
   <meta name="keywords" content="escribir, escritos, poesía, poema, prosa, publicar, huella, huellas">
   <title>Huellas - Publicar</title>
- <!--Estilos-->
- <link rel="stylesheet" href="css/styles.css">
- <!--Fuentes-->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link rel="stylesheet" href="css/font-css/all.css" />
- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Raleway&display=swap"
-   rel="stylesheet">
- <!--Bootstrap-->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
- <!--Animate.css-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Estilos-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/font-css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Raleway&display=swap"
+    rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -39,32 +39,36 @@
             <div class="center">
               <div class="form__content">
                 <h1 class="form__title">¡Deja tu <strong>Huella</strong>!</h1>
-                <p class="form__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam,
-                  eligendi provident, veniam illum delectus ex consectetur molestias eius rem reprehenderit. Accusamus saepe
-                  molestias suscipit inventore cumque et quisquam rerum!</p>
+                <p class="form__paragraph"> Nuestro objetivo 
+                  es otorgarle un espacio donde pueda subir todo aquel escrito o poema que considere parte esencial de su persona. Puede ser un escrito suyo, de algún escritor/a que admire (otorgándole el crédito al autor correspondiente), 
+                  o un simple rejunte de letras que tengan un sentido especial para quien lo sube, ¡no hay ningún tipo de límite! 
+                </p>
 
-                  <div class="row g-2">
-                    <div class="col-md">
-                      <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Historia sin título.." required>
-                        <label for="floatingInput">Título</label>
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <div class="form-floating">
-                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" required>
-                          <option selected value="1">Escrito</option>
-                          <option value="2">Poema</option>
-                        </select>
-                        <label for="floatingSelectGrid">Tipo de texto</label>
-                      </div>
+                <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="Historia sin título.."
+                        required>
+                      <label for="floatingInput">Título</label>
                     </div>
                   </div>
-                                 
-                  <div class="form-floating mt-3 mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
-                    <label for="floatingTextarea2">Descripción</label>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example"
+                        required>
+                        <option selected value="1">Escrito</option>
+                        <option value="2">Poema</option>
+                      </select>
+                      <label for="floatingSelectGrid">Tipo de texto</label>
+                    </div>
                   </div>
+                </div>
+
+                <div class="form-floating mt-3 mb-3">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px" required></textarea>
+                  <label for="floatingTextarea2">Contenido</label>
+                </div>
 
                 <div class="mb-3">
                   <label for="formFile" class="form-label">Añadir imagen</label>
@@ -72,14 +76,20 @@
                 </div>
 
                 <div class="right">
-                  <button class="button me-3" type="submit">Enviar</button> 
+                  <button class="button me-3" type="submit">Enviar</button>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 143.86666666666667,223.2 287.73333333333335,246.4 434,238 C 580.2666666666667,229.6 728.9333333333334,189.6 897,178 C 1065.0666666666666,166.4 1252.5333333333333,183.2 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#f14755ff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 143.86666666666667,223.2 287.73333333333335,246.4 434,238 C 580.2666666666667,229.6 728.9333333333334,189.6 897,178 C 1065.0666666666666,166.4 1252.5333333333333,183.2 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#f14755ff" class="transition-all duration-300 ease-in-out delay-150">
+        </path>
+      </svg>
     </section>
   </main>
 
@@ -87,9 +97,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="footer__container pt-3">
-          <p class="footer__text">Huellas&#174 - Cuenta tu historia | <a href="contacto.html">Contactanos</a> | <a href="#"><i
-                class="fab fa-facebook"></i></a> | <a href="#"><i class="fab fa-instagram"></i></a> | <a href="#"><i
-                class="fab fa-twitter"></i></a></p>
+          <p class="footer__text">Huellas&#174 - Cuenta tu historia | <a href="contacto.html">Contactanos</a> | <a
+              href="#"><i class="fab fa-facebook"></i></a> | <a href="#"><i class="fab fa-instagram"></i></a> | <a
+              href="#"><i class="fab fa-twitter"></i></a></p>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 
 .owl-carousel{
-
+    height: 550px;
     position: relative;
     font-family: $secondary-text;
 
@@ -15,8 +15,6 @@
     }
 
     .owl-prev, .owl-next {
-        width: 15px;
-        height: 100px;
         position: absolute;
         top: 40%;
         display: block !important;
@@ -29,8 +27,9 @@
         height: 500px;
         border-radius: 3%;
         padding: 10px;
-        background-color: rgb(221, 221, 221);
-        
+        background-color: #fcfaff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.08' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        box-shadow: 0px 0px 2px 2px inset rgb(161, 158, 158);
         .item__image{
             border-radius: 3%;
             max-height: 60%;
@@ -42,7 +41,6 @@
         }
 
         .item__description{
-            
         }
 
         .button{

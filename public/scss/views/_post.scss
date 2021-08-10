@@ -1,5 +1,12 @@
 #post{
     color: $tertiary-color;
+
+    .form__post{
+        .form__paragraph{
+            font-size: 13px;
+        }
+        
+    }
 }
 
 .footer__text{

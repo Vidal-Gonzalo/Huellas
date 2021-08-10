@@ -5,10 +5,10 @@
   height: 100vh;
   width: 100vw;
   color: $secondary-color;
-  background-image: url(./img/Huellas-inicio.jpg);
+  background-image: url(./img/footprints.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
   background-color: $tertiary-color;
   display: table-cell;
   text-align: left;
@@ -16,11 +16,11 @@
 
   .presentation__wrap {
     display: inline-block;
-    margin-left: 5%;
     font-family: $primary-text;
   }
   
   .presentation__title {
+    backdrop-filter: blur(3px);
     color: $primary-color;
     font-size: $title-font-size;
     font-weight: $font-semi-light;
@@ -28,6 +28,7 @@
   }
   
   .presentation__subtitle {
+    backdrop-filter: blur(3px);
     font-size: $subtitle-font-size;
     font-weight: $font-light;
   }
@@ -78,7 +79,6 @@
   }
   
   .card__content{
-    width: 100%;
     padding: 10px;
     font-size: $paragraph-font-size;
   }
@@ -121,13 +121,25 @@
     letter-spacing: 3px;
     margin-bottom: 20px;
   }
-  
-  .topWritings__highlight {
-    font-size: 18px;
-  }
 }
 
+//TopPoems
 
+#topPoems {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  text-align: center;
+
+  .topPoems__title {
+    font-family: $primary-text;
+    color: $primary-color;
+    font-size: $sec-title-font-size;
+    font-weight: $font-light;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  
+}
 
 
 
