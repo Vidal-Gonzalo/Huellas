@@ -66,18 +66,21 @@
   .owl-carousel .owl-next {
     right: -40px; }
   .owl-carousel .item {
-    height: 500px;
+    height: 550px;
     border-radius: 3%;
-    padding: 10px;
+    padding: 20px;
     background-color: #fcfaff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.08' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     box-shadow: 0px 0px 2px 2px inset #a19e9e; }
     .owl-carousel .item .item__image {
       border-radius: 3%;
+      min-height: 60%;
       max-height: 60%; }
     .owl-carousel .item .item__title {
       margin-top: 15px;
       font-weight: bold; }
+    .owl-carousel .item .item__description {
+      text-overflow: ellipsis; }
     .owl-carousel .item .button {
       color: #ffffff;
       margin-top: 0px; }
@@ -178,6 +181,8 @@
     font-weight: 300;
     letter-spacing: 3px;
     margin-bottom: 20px; }
+  #topWritings .topWritings__subtitle {
+    font-size: 16px; }
 
 #topPoems {
   background-color: #ffffff;
