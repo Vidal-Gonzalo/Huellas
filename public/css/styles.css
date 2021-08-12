@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Typewriter Condensed';
+  src: url(./typeWriter-font/typewcond_bold.otf);
+  font-weight: normal;
+  font-style: normal; }
+
 .carousel .carousel-inner {
   box-shadow: 5px 5px 15px 5px #000000; }
 
@@ -94,12 +100,17 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
+  font-family: "TypeWriter Condensed";
   font-weight: bold;
+  font-size: 20px;
   margin: 0px 15px 0px 15px;
   transition: all 500ms; }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #f14755; }
+
+.navbar .navbar-brand {
+  margin-left: 10px; }
 
 #presentation {
   height: 100vh;
@@ -359,7 +370,7 @@
   #about .about__subtitle {
     margin-top: 20px;
     color: #ffffff;
-    font-size: 14px; }
+    font-size: 20px; }
   #about .about__author {
     color: #ffffff; }
 

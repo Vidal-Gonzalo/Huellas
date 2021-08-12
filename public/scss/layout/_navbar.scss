@@ -9,7 +9,9 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: $secondary-color;
+  font-family: "TypeWriter Condensed";
   font-weight: $font-bold;
+  font-size: 20px;
   margin: 0px 15px 0px 15px;
   transition: all 500ms;
 }
@@ -18,5 +20,10 @@
   color: $primary-color;
 }
 
+.navbar{
+  .navbar-brand{
+    margin-left: 10px;
+  }
+}
 
 
