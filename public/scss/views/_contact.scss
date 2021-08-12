@@ -37,18 +37,48 @@
     padding-bottom: 60px;
     
     .mission__wrap{
+        color: $secondary-color;
         padding: 50px;
         box-shadow: 3px 3px 3px 5px #ccc;
-        text-align: center;
-        
+        border-radius: 3%;
+        background-image: url(./img/thinker.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgba(0,0,0,0.6);
     }
     .mission__title{
         font-family: $primary-text;
-        font-size: $subtitle-font-size;
+        font-size: $sec-title-font-size;
         letter-spacing: 2px;
         color: $primary-color;
         margin-top: 30px;
         margin-bottom: 20px;
 
+    }
+    .mission__cardWrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+        .mission__card{
+            margin: 0px 30px 30px 30px;
+            
+            .mission__number{
+                font-weight: $font-bold;
+                margin-right: 20px;
+                font-size: 100px;
+            }
+            .mission__description{
+                .mission__name{
+                    padding-top: 30px;
+                    font-weight: $font-bold;
+                    font-size: 20px;
+                }
+                .mission__text{
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }

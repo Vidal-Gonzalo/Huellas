@@ -212,6 +212,16 @@
     }
   }
 
+  #mission{
+    .mission__title{
+      letter-spacing: 0px;
+      font-size: 25px;
+    }
+    .mission__wrap{
+      border-radius: 0%;
+    }
+  }
+
   #contact{
     .form__post{
       height: 100vh;
@@ -312,6 +322,29 @@
         font-size: 13px;
       }
     }
+  }
+
+  #mission{
+    .mission__wrap{
+    
+      .mission__cardWrap{
+        .mission__card{
+            margin: 0;
+            .mission__number{
+                font-size: 70px;
+            }
+            .mission__description{
+                .mission__name{
+                    font-size: 18px;
+                }
+                .mission__text{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    }
+    
   }
 
   #contact{

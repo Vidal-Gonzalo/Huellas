@@ -100,9 +100,8 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
-  font-family: "TypeWriter Condensed";
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 20px;
   margin: 0px 15px 0px 15px;
   transition: all 500ms; }
 
@@ -380,16 +379,39 @@
   padding-top: 50px;
   padding-bottom: 60px; }
   #mission .mission__wrap {
+    color: #ffffff;
     padding: 50px;
     box-shadow: 3px 3px 3px 5px #ccc;
-    text-align: center; }
+    border-radius: 3%;
+    background-image: url(./img/thinker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6); }
   #mission .mission__title {
     font-family: "Oswald", sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 2px;
     color: #f14755;
     margin-top: 30px;
     margin-bottom: 20px; }
+  #mission .mission__cardWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; }
+    #mission .mission__cardWrap .mission__card {
+      margin: 0px 30px 30px 30px; }
+      #mission .mission__cardWrap .mission__card .mission__number {
+        font-weight: bold;
+        margin-right: 20px;
+        font-size: 100px; }
+      #mission .mission__cardWrap .mission__card .mission__description .mission__name {
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 20px; }
+      #mission .mission__cardWrap .mission__card .mission__description .mission__text {
+        font-size: 15px; }
 
 @media (min-width: 320px) and (max-width: 369px) {
   #presentation .button {
@@ -505,6 +527,11 @@
       font-size: 11px; }
   #post .form__post {
     height: 100vh; }
+  #mission .mission__title {
+    letter-spacing: 0px;
+    font-size: 25px; }
+  #mission .mission__wrap {
+    border-radius: 0%; }
   #contact .form__post {
     height: 100vh; } }
 
@@ -556,6 +583,14 @@
   #post .form__post {
     height: 55vh; }
     #post .form__post .form__paragraph {
+      font-size: 13px; }
+  #mission .mission__wrap .mission__cardWrap .mission__card {
+    margin: 0; }
+    #mission .mission__wrap .mission__cardWrap .mission__card .mission__number {
+      font-size: 70px; }
+    #mission .mission__wrap .mission__cardWrap .mission__card .mission__description .mission__name {
+      font-size: 18px; }
+    #mission .mission__wrap .mission__cardWrap .mission__card .mission__description .mission__text {
       font-size: 13px; }
   #contact .form__post {
     height: 45vh; } }
