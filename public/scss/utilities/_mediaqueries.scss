@@ -113,13 +113,14 @@
 
     .carousel .carousel-inner .carousel-item {
       height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .carousel-caption {
         display: block !important;
         font-family: $secondary-text;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        font-size: 12px;
       }
     }
   }
@@ -135,9 +136,7 @@
       .carousel-caption {
         display: block !important;
         font-family: $secondary-text;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        font-size: 12px;
       }
     }
   }
