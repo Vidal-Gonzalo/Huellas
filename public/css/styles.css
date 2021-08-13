@@ -575,6 +575,8 @@
       font-size: 25px; }
     .cards .card__content p {
       font-size: 13px; }
+  .owl-carousel .item .item__description {
+    font-size: 13px; }
   #footer .footer__container {
     font-size: 12px; }
   #footer .footer__post .button {
